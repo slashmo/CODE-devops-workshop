@@ -4,11 +4,15 @@ pipeline {
 
   stages {
     stage ('List pip packages') {
-      sh 'pip list'
+      steps {
+        sh 'pip list'
+      }
     }
 
     stage ('List contents of /usr/src/app') {
-      sh 'ls -l /usr/src/app'
+      steps {
+        sh 'ls -l /usr/src/app'
+      }
     }
   }
 }
