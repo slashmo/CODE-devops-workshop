@@ -18,11 +18,12 @@ ssh ubuntu@<PUBLIC_IP> -i /path/to/code.pem
 ```
 sudo apt-get install docker-ce
 sudo docker swarm init
-sudo docker service create \
-    --mount type=volume,source=jenkins-max-data,destination="/var/jenkins_home",volume-driver=local \
-    -p 8080:8080 \
-    --name jenkins-max \
-    jenkins/jenkins:lts
+sudo docker container run \
+   --mount type=volume,source=jenkins-max-data,destination="/var/jenkins_home",volume-driver=local \
+   -v /var/run/docker.sock:/var/run/docker.sock \
+   -p 8080:8080 \
+   --name jenkins-max -d \
+   jenkins/jenkins:lts
 
 ```
 
