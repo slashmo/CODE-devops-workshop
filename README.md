@@ -30,12 +30,12 @@ ssh ubuntu@<PUBLIC_DNS> -i /path/to/code.pem
 ### Step 3: Run a Jenkins CI container
 * Run following:
 ```
-sudo docker container run \
+docker container run \
    --mount type=volume,source=jenkins-max-data,destination="/var/jenkins_home",volume-driver=local \
    -v /var/run/docker.sock:/var/run/docker.sock \
    -p 8080:8080 \
    --name jenkins-max -d \
-   jenkins/jenkins:lts
+   maxsteel/jenkins-code:latest
 ```
 
 ## Other Stuff
@@ -53,6 +53,11 @@ sudo docker container run \
 * Do initial build on master
 * Make a code change on a new branch with TDD, submit a pull request, view build & test
 * Merge PR, view build, test & deploy
+
+### AMI config
+* Install docker-ce
+* set DOCKER_OPTS="--experimental=true" in /etc/default/docker
+* usermod -aG docker ubuntu
 
 ### AWS IAM Profile permissions
 * Create Key Pair
