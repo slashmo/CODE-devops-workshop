@@ -1,5 +1,5 @@
 # devops-workshop
-## Prep Work
+## Pre-work
 ### Register your AWS Educate Account
 *Amazon Web Services (AWS) is a public cloud provider, that we will use to launch preconfigured instances for this workshop*
 * Visit https://www.awseducate.com/Registration and register your Student account.
@@ -41,3 +41,10 @@ sudo docker container run \
 * Do initial build on master
 * Make a code change on a new branch with TDD, submit a pull request, view build & test
 * Merge PR, view build, test & deploy
+
+## AWS IAM Profile permissions
+* Create Key Pair
+* Create Security Group
+* Create AMI
+* Create/launch/delete Instance
+* Create/launch/delete ELB
