@@ -32,7 +32,7 @@ ssh ubuntu@<PUBLIC_DNS> -i /path/to/code.pem
 ```
 docker container run \
    --mount type=volume,source=jenkins-max-data,destination="/var/jenkins_home",volume-driver=local \
-   -v /var/run/docker.sock:/var/run/docker.sock \
+   -v /var/lib/docker.sock:/var/lib/docker.sock \
    -p 8080:8080 \
    --name jenkins-max -d \
    maxsteel/jenkins-code:latest
@@ -56,7 +56,7 @@ docker container run \
 
 ### AMI config
 * Install docker-ce
-* set DOCKER_OPTS="--experimental=true" in /etc/default/docker
+* set DOCKER_OPTS="--experimental=false" in /etc/default/docker
 * usermod -aG docker ubuntu
 
 ### AWS IAM Profile permissions
