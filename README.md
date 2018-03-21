@@ -32,7 +32,7 @@ ssh ubuntu@<PUBLIC_DNS> -i /path/to/code.pem
 ```
 docker container run \
    --mount type=volume,source=jenkins-max-data,destination="/var/jenkins_home",volume-driver=local \
-   -v /var/lib/docker.sock:/var/lib/docker.sock \
+   -v /var/run/docker.sock:/var/run/docker.sock \
    -p 8080:8080 \
    --name jenkins-max -d \
    maxsteel/jenkins-code:latest
