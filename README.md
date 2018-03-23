@@ -3,8 +3,7 @@
 ### What you will need
 * A laptop with:
    * Git installed (www.git-scm.com/downloads)
-   * A text editor of your choice
-   * An SSH client (Git Bash will do, or you can use putty)
+   * A text editor of your choice (e.g. VS Code)
 * An active AWS Educate account
 
 ### Register your AWS Educate Account
