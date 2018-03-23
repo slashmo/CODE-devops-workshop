@@ -24,7 +24,7 @@
 * Download the SSH key called code.pem from the dropbox @ <dropbox_link_here>
 * From a Git Bash, SSH to instance with:
 ```
-ssh ubuntu@<PUBLIC_DNS> -i /path/to/code.pem
+ssh ubuntu@<PUBLIC_DNS> -i /path/to/devops-workshop.pem
 ```
 
 ### Step 3: Run a Jenkins CI container
