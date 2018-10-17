@@ -2,7 +2,6 @@ pipeline {
   agent { label 'master' }
 
   stages {
-    
     stage ('Build') {
       steps {
         sh """
@@ -50,7 +49,6 @@ pipeline {
     }
 
     stage ('Deploy') {
-      // Since no agent{} is specified, this stage will run on the Jenkins Master
       when {
         // Only deploy the application when on 'master' branch
         branch 'master'
