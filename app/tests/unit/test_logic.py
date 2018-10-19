@@ -1,6 +1,6 @@
 from unittest import TestCase
 from calculator.logic import Calculator
-
+import pytest
 
 class CalculatorTests(TestCase):
     def test_mul_with_two_positive_numbers(self):
