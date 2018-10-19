@@ -15,7 +15,7 @@ class CalculatorTests(TestCase):
         c = Calculator()
         assert c.mul(-5, 10) == -50
 
-    def test_calculator_throws_e_when_out_of_bounds_low(self):
+    def test_mul_throws_e_when_out_of_bounds_low(self):
         with pytest.raises(ValueError):
             c = Calculator()
             c.mul(-1001,100)
@@ -33,6 +33,11 @@ class CalculatorTests(TestCase):
         assert c.div(-50, 10) == -5
 
     def test_div_throws_e_when_dividing_by_zero(self):
-        with pytest.raises(ValueError):
+        with pytest.raises(ZeroDivisionError):
             c = Calculator()
             c.div(50, 0)
+
+    def test_div_throws_e_when_out_of_bounds_low(self):
+        with pytest.raises(ValueError):
+            c = Calculator()
+            c.div(-1001,100)
