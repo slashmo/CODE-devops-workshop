@@ -46,3 +46,4 @@ To log into the AWS console:
 * This will launch a new window. Hit 'Start Lab' and 'Open Console'
 
 > Here comes my important addition
+# Important addition
