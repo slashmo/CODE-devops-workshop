@@ -7,7 +7,6 @@ COPY app/ .
 RUN pip install \
   --no-cache-dir \
   -r dev-requirements.txt
-# Copy flask app source code to the /app dir on the container
 
 FROM builder AS unit-tester
 RUN py.test ./tests/unit -v \
