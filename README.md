@@ -44,3 +44,6 @@ CODE-devops-workshop
 To log into the AWS console:
 * Log into your AWS educate account, click 'AWS Account' from the menu bar, click "Go to your AWS Educate starter account"
 * This will launch a new window. Hit 'Start Lab' and 'Open Console'
+
+> Here comes my important addition
+# Important addition
