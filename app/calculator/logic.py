@@ -15,6 +15,9 @@ class Calculator(object):
         self.max_value = max_value
 
     def mul(self, a, b):
+        if (a < min_value || a > max_value || b < min_value || b > max_value)
+            raise Exception('One or both of the given numbers are out of bounds.')
+
         return a * b
 
     def div(self, a, b):
