@@ -20,5 +20,19 @@ class CalculatorTests(TestCase):
             c = Calculator()
             c.mul(-1001,100)
 
-    def test_div(self):
-        pass
+    def test_div_with_two_positive_numbers(self):
+        c = Calculator()
+        assert c.div(50, 10) == 5
+
+    def test_div_with_two_negative_numbers(self):
+        c = Calculator()
+        assert c.div(-50, -10) == 5
+    
+    def test_div_with_one_negative_one_positive_number(self):
+        c = Calculator()
+        assert c.div(-50, 10) == -5
+
+    def test_div_throws_e_when_dividing_by_zero(self):
+        with pytest.raises(ValueError):
+            c = Calculator()
+            c.div(50, 0)
