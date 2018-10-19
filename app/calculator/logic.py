@@ -16,7 +16,7 @@ class Calculator(object):
 
     def mul(self, a, b):
         if (a < self.min_value or a > self.max_value or b < self.min_value or b > self.max_value):
-            raise Exception('One or both of the given numbers are out of bounds.')
+            raise ValueError('One or both of the given numbers are out of bounds.')
 
         return a * b
 
