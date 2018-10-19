@@ -21,9 +21,8 @@ $ git checkout -b feature/test-cases
     * Check `continuous-integration/jenkins/pr-merge`
   * Click 'Create'
 
-
 ### Step C.3: Implement Calculator Multiplication logic using TDD and CI
-* In your GitHub fork, create a new branch called `feature/test-mul`
+* In your GitHub fork, create a new branch called `feature/multiplication`
 * Complete task 1 of the Unit Test section in the readme located at 'app/README.md' in your feature branch, push to GitHub, and open a Pull Request to master.
   **N.B: MAKE SURE** the Pull Request is created to merge your feature branch to master branch of **your fork**, not the master branch of the original repo
 * Complete tasks 2-4 using the Continuous Integration builds to validate your tests
@@ -31,7 +30,7 @@ $ git checkout -b feature/test-cases
 * Notice the CI build redeploy your application. Try testing the mul logic by appending `/calc/92*100` to the url.
 
 ### Step C.4: Implement Division logic using TDD and local Dockerised builds
-* Create a new branch called `feature/test-div`
+* Create a new branch called `feature/division`
 * Complete tasks 5-6 through dockerised builds on your local workstation and using TDD. Remember to commit often.
 * Once you are happy with your work, push to GitHub and create a PR to master. Again ask a friend to review and then merge.
 * Test the division logic through the UI on the production application.
